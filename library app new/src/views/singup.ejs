@@ -9,12 +9,13 @@
 		<title>Storystrap Template</title>
 		<meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+    <base href="/">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+        <![endif]-->
+        
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -96,7 +97,7 @@
                 <div class="row">
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <p style="font-size: 30px; text-align: center" id="r">Register</p>
-                            <form action="/singup1" method="POST">
+                            <form action="/user/singup1" method="POST">
                         <table class="table" style="width: 600px; margin:auto;">
                             <tr>
                                 <td>Name :</td>
@@ -128,7 +129,7 @@
                                 </select></td>
                             </tr>
                             <tr style="text-align: right">                        
-                                <td><a href="/"><button type="submit" class="btn btn-success" name="rgbtn" style="width: 150px">Register</button></a></td>
+                                <td><button type="submit" class="btn btn-success" name="rgbtn" style="width: 150px">Register</button></td>
                                 <td></td>
                             </tr>
                         </table>

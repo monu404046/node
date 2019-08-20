@@ -27,6 +27,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="/" class="navbar-brand">Home</a>
+      
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
@@ -96,7 +97,7 @@
                                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <p style="font-size: 30px; text-align: center" name="log">Login</p>
 
-                                        <form action="/login" method="POST">
+                                        <form action="/user/login" method="POST">
                                     <table class="table" style="width: 600px; margin:auto;">
                                         <tr>
                                             <td>Username :</td>
@@ -106,14 +107,17 @@
                                         <tr>
                                             <td>Password :</td>
                                             <td><input type="password" class="form-control" name="pw" placeholder="Enter Password"></td>
-                                        </tr>
+                                       
+                                       </tr>
                     
                                         <td><input type="submit" value="login"></td>
-                                       <td> <a href="/singup"><input type="button" value="register"></a></a></p></td>
+                                      <!--  <td> <a href="/user/singup"><input type="button" value="signup"></a></a></p></td> -->
                                         </tr>
                            
                                     </table>
                                     </form>
+                                   
+                                    <a href="/user/singup"><input type="button" value="signup" class="btn btn-success"></a></a>
                                 </div>
                             </div>
                         </div>
