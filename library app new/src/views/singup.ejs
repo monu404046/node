@@ -1,3 +1,6 @@
+
+    
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -34,16 +37,6 @@
           <a href="<%= nav[i].link%>"> <%=nav[i].title%></a>
         </li>
         <%}%>
-       <!--  <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li> -->
-      </ul>
       <ul class="nav navbar-right navbar-nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
@@ -97,37 +90,58 @@
       
       <div class="panel">
         <div class="panel-body">
-          
-          
-          <% for(i=0;i<books.length;i++){%>
             
-          
-          
-          
-          
-          
-          
-          <!--/stories-->
-          <div class="row">    
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="<%=books[i].img%>" style="width:100px;height:100px" class="img-circle"></a>
+    <div id="reg">
+        <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <p style="font-size: 30px; text-align: center" id="r">Register</p>
+                            <form action="/singup1" method="POST">
+                        <table class="table" style="width: 600px; margin:auto;">
+                            <tr>
+                                <td>Name :</td>
+                                <td><input type="text" class="form-control" name="nr" placeholder="Enter Name"></td>
+                            </tr>
+                            <tr>
+                                <td>Username :</td>
+                                <td><input type="text" class="form-control" name="unr" placeholder="Enter Username"></td>
+                            </tr>
+        
+                            <tr>
+                                <td>Password :</td>
+                                <td><input type="password" class="form-control" name="pwr" placeholder="Enter Password"></td>
+                            </tr>
+
+                            <tr>
+                                    <td>Confirm Password :</td>
+                                    <td><input type="password" class="form-control" name="cpwr" placeholder="Confirm Password"></td>
+                            </tr>
+                            <tr>
+                                <td>Mobile :</td>
+                                <td><input type="text" class="form-control" name="mr" pattern="[6789][0-9]{9}" placeholder="Enter Mobile"></td>
+                            </tr>
+                            <tr>
+                                <td>Role</td> 
+                                <td><select name="er">
+                                    <option >user</option>
+                                    <option >admin</option>
+                                </select></td>
+                            </tr>
+                            <tr style="text-align: right">                        
+                                <td><a href="/"><button type="submit" class="btn btn-success" name="rgbtn" style="width: 150px">Register</button></a></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-10 col-sm-9">
-              <h3><%=books[i].btitle%></h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=books[i].genere%></span></h4><h4>
-                    <p><b><%=books[i].author%></b></p>
-                  <small style="font-family:courier,'new courier';" class="text-muted">2 hours ago  • <a href="/sp/<%= i%>" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-       <% } %>
-                                                                          
+</div>
+                
+                                </div>
+                            </div>
+                        </div>
+                                                        
 	                                                
                                                       
    	</div><!--/col-12-->
